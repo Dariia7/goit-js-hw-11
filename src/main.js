@@ -10,10 +10,10 @@ const imgContainer = document.querySelector('.gallery');
 const searchForm = document.querySelector('.form');
 const loaderEl = document.querySelector('.loader');
 
-function search(event) {
+function onSearch(event) {
   event.preventDefault();
   const searchQuery = event.target.elements.searchKeyword.value.trim();
-  imgContainer.innerHTML = '';
+
   if (searchQuery === '') {
     return iziToast.error({
       message:
@@ -46,4 +46,4 @@ function search(event) {
     });
 }
 
-searchForm.addEventListener('submit', search);
+searchForm.addEventListener('submit', onSearch);
