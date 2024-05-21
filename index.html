@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/goit-js-hw-11/assets/vendor-0fc460d7.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-11/assets/main-a11af75f.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/main-e27bedeb.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-0fc460d7.js">
     <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-e27bedeb.css">
   </head>
   <body>
     <header class="header">
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./app.html" class="nav-link">App</a>
       </li>
     </ul>
   </nav>
 </header>
 
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goit-js-hw-11/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+    <form class="form">
+      <div class="">
+        <input type="text" class="search-input" name="searchKeyword" />
+      </div>
+      <button type="submit" class="submit-btn">Search</button>
+    </form>
+    <ul class="gallery"></ul>
+   <span class="loader is-hidden"></span>
+    
 
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    
+    <!--
+<section class="vite-promo">
   <div class="container">
     <div class="wrapper">
       <h2 class="title">
@@ -65,10 +70,10 @@
     </div>
 
     <div class="thumb">
-      <!-- Path to images as from index.html file -->
+      Path to images as from index.html file
       <img
         class="pic"
-        src="/goit-js-hw-11/assets/vite-logo-51249ca9.png"
+        src="./img/vite-logo.png"
         alt="Vite logo"
         width="640"
         height="640"
@@ -77,6 +82,8 @@
   </div>
 </section>
 
+-->
+    
 
     
   </body>
